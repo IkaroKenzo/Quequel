@@ -1,0 +1,51 @@
+
+body{
+margin:0;
+background:#0d1020;
+color:white;
+font-family:Arial,sans-serif;
+overflow-x:hidden;
+}
+.container{max-width:900px;margin:auto;padding:20px}
+.hidden{display:none}
+h1{text-align:center;color:#ff66cc;text-shadow:0 0 15px #ff66cc}
+.counter{text-align:center;margin:20px 0;font-size:1.1rem}
+#texto{white-space:pre-wrap;line-height:1.8}
+.overlay{
+position:fixed;inset:0;display:flex;justify-content:center;align-items:center;
+background:#0d1020;z-index:10;
+}
+#startBtn,#loveBtn{
+padding:15px 25px;border:none;border-radius:30px;
+font-size:1.1rem;cursor:pointer;
+}
+#startBtn{background:#ff66cc;color:white}
+#loveBtn{background:#ff4d88;color:white;margin:30px auto}
+.center{text-align:center}
+.heart{
+position:fixed;
+font-size:28px;
+animation:float linear infinite;
+}
+@keyframes float{
+from{transform:translateY(110vh)}
+to{transform:translateY(-120px)}
+}
+.star{
+position:fixed;
+background:white;
+border-radius:50%;
+animation:blink 2s infinite alternate;
+}
+@keyframes blink{
+from{opacity:.2}
+to{opacity:1}
+}
+#specialMessage{
+text-align:center;
+font-size:1.5rem;
+color:#ff80d5;
+margin-top:20px;
+font-weight:bold;
+}
+.tulips{text-align:center;color:#ff66cc;margin-top:40px}
